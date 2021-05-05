@@ -1,0 +1,51 @@
+# Maintainer: qvshuo
+
+appname=WeChat
+pkgname=wechat-nativefier
+pkgver=20210503.8
+pkgrel=1
+pkgdesc='WeChat desktop built with nativefier (electron)'
+arch=('x86_64')
+url='https://wx.qq.com/'
+license=('MIT')
+source=(
+  '${pkgname}.css'
+  '${pkgname}.js'
+  '${pkgname}.desktop'
+  '${pkgname}.png'
+)
+sha512sums=(
+  'afc40d22dcfe06a7fd28324567b3112ab1ddabbd77f621401031e8be1bfceb69af6cba053a16aea6431f431b8f40fe8aaa3324791152d71623f7e7f9d1406da4'
+  'd0fff3abb41f93104e60d1659cfe27a5512836fa4dd7a0ab859438345f016681465959e907346d840f26b9d8f850758f81ee92b576d71b6fed9659d50602286e'
+  'd6df610df69c9edc203a67e2c8bcefce9dc22548ac9d3d3a3d850e35bd06e31c9f0e7a281e5f9bb8149279eac436e8a32170d979d5449b445e15848d533fb1f5'
+  '718d0a44567a32a9ae4e875df8ee905b93f52bc6570dd7b75120bd5f801d2d350ae6d378e84b243cb8af80ccf85c1c873f43a8138efb880f27df8e356a2bcfce'
+)
+
+build() {
+  nativefier \
+    --name "${appname}" \
+    --icon "${pkgname}.png" \
+    --inject "${pkgname}.css" \
+    --inject "${pkgname}.js" \
+    --internal-urls ".*?" \
+    --file-download-options '{"saveAs": true}' \
+    "${url}"
+}
+
+package() {
+  # Creating needed directories
+  install -dm755 "$pkgdir/opt/"
+	install -dm755 "$pdkdir/usr/bin"
+	install -dm755 "$pdkdir/usr/share/pixmaps/"
+	install -dm755 "$pdkdir/usr/share/applications/"    
+  
+  # Install program
+  cp -rL $appname-linux-* "$pkgdir"/opt/$pkgname
+  ln -sf /opt/$pkgname/$appname "$pkgdir"/usr/bin/$appname
+
+  # Install desktop launcher
+  install -Dm644 $pkgname.desktop "$pkgdir"/usr/share/applications/$appname.desktop
+  ln -sf /opt/$pkgname/resources/app/icon.png "$pkgdir"/usr/share/pixmaps/$appname.png
+
+  chmod 666 "$pkgdir"/opt/$pkgname/resources/app/nativefier.json
+}

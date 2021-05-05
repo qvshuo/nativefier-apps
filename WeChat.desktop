@@ -2,6 +2,7 @@
 Name=WeChat
 Name[zh_CN]=微信
 Comment=Yet another electron WeChat for Linux desktop.
+Comment[zh_CN]=Linux桌面下的又一个电子微信。
 Exec=/home/huizhi/Desktop/yachat/WeChat-linux-x64/WeChat %U
 Icon=/home/huizhi/Desktop/yachat/icon.png
 Encoding=UTF-8
