@@ -13,6 +13,7 @@
 
 .main_inner {
     max-width: 100% !important;
+    -webkit-border-radius: 0 !important;
 }
 
 .tab {
