@@ -6,6 +6,6 @@ Icon=/home/huizhi/Desktop/nativefier-apps/YesPlayMusic/YesPlayMusic.png
 Encoding=UTF-8
 Terminal=false
 StartupNotify=true
-StartupWMClass=yesplaymusic-nativefier-3ec0d7
+StartupWMClass=yesplaymusic-nativefier-72d208
 Type=Application
 Categories=Network;AudioVideo;Player;
