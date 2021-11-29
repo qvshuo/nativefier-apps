@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: dark) {
     * {
-    caret-color: #ffffff;
+        caret-color: #ffffff;
     }
     .box {
         background-color: #101010;
@@ -20,46 +20,49 @@
         background-color: #101010;
     }
     .chat .box_ft {
-    border-top: 1px solid #434343;
-    background-color: #101010;
+        border-top: 1px solid #434343;
+        background-color: #101010;
+    }
+    .message .nickname {
+        color: #ffffff;
     }
     .bubble:after, .bubble:before {
-    border: 0px;
+        border: 0px;
     }
     .expression {
-    border: 1px solid #434343;
+        border: 1px solid #434343;
     }
     .exp_hd {
-    background-color: #434343;
+        background-color: #434343;
     }
     .exp_hd_item a {
         color: #ffffff;
     }
     .exp_hd_item.active {
-    background-color: #101010;
+        background-color: #101010;
     }
     .exp_bd {
         background-color: #101010;
     }
     .qq_face a {
-    border-bottom: 1px solid #434343;
-    border-right: 1px solid #434343;
+        border-bottom: 1px solid #434343;
+        border-right: 1px solid #434343;
     }
     .emoji_face a {
-    border-bottom: 1px solid #434343;
-    border-right: 1px solid #434343;
+        border-bottom: 1px solid #434343;
+        border-right: 1px solid #434343;
     }
     .expression:after, .expression:before {
-    display: none;
+        display: none;
     }
     .btn {
-    border: 0px;
+        border: 0px;
     }
     .chat .box_ft .content .flex {
-    color: #ffffff;
+        color: #ffffff;
     }
     .profile .nickname {
-    color: #ffffff;
+        color: #ffffff;
     }
 }
 
