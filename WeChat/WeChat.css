@@ -1,67 +1,67 @@
 @media (prefers-color-scheme: dark) {
     * {
-        caret-color: #ffffff;
+        caret-color: #ffffff !important;
     }
     .box {
-        background-color: #101010;
+        background-color: #101010 !important;
     }
     .box_hd .title_wrap {
-        background-color: #101010;
-        border-bottom: 1px solid #434343;
+        background-color: #101010 !important;
+        border-bottom: 1px solid #434343 !important;
     }
     .box_hd {
-        background-color: #101010;
+        background-color: #101010 !important;
     }
     .box_hd .title .title_name {
-        color: #ffffff;
+        color: #ffffff !important;
     }
     .chat .box_bd {
-        background-color: #101010;
+        background-color: #101010 !important;
     }
     .chat .box_ft {
-        border-top: 1px solid #434343;
-        background-color: #101010;
+        border-top: 1px solid #434343 !important;
+        background-color: #101010 !important;
     }
     .message .nickname {
-        color: #ffffff;
+        color: #ffffff !important;
     }
     .bubble:after, .bubble:before {
-        border: 0px;
+        border: 0px !important;
     }
     .expression {
-        border: 1px solid #434343;
+        border: 1px solid #434343 !important;
     }
     .exp_hd {
-        background-color: #434343;
+        background-color: #434343 !important;
     }
     .exp_hd_item a {
-        color: #ffffff;
+        color: #ffffff !important;
     }
     .exp_hd_item.active {
-        background-color: #101010;
+        background-color: #101010 !important;
     }
     .exp_bd {
-        background-color: #101010;
+        background-color: #101010 !important;
     }
     .qq_face a {
-        border-bottom: 1px solid #434343;
-        border-right: 1px solid #434343;
+        border-bottom: 1px solid #434343 !important;
+        border-right: 1px solid #434343 !important;
     }
     .emoji_face a {
-        border-bottom: 1px solid #434343;
-        border-right: 1px solid #434343;
+        border-bottom: 1px solid #434343 !important;
+        border-right: 1px solid #434343 !important;
     }
     .expression:after, .expression:before {
-        display: none;
+        display: none !important;
     }
     .btn {
-        border: 0px;
+        border: 0px !important;
     }
     .chat .box_ft .content .flex {
-        color: #ffffff;
+        color: #ffffff !important;
     }
     .profile .nickname {
-        color: #ffffff;
+        color: #ffffff !important;
     }
 }
 
