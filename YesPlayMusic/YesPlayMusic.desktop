@@ -8,4 +8,4 @@ Terminal=false
 StartupNotify=true
 StartupWMClass=yesplaymusic-nativefier-674e3e
 Type=Application
-Categories=Network;AudioVideo;Player;
+Categories=Audio;Music;Player;
