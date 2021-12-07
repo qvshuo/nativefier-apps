@@ -9,4 +9,4 @@ Terminal=false
 StartupNotify=true
 StartupWMClass=wechat-nativefier-4418c7
 Type=Application
-Categories=Network;Chat;InstantMessaging;
+Categories=Network;Application;
