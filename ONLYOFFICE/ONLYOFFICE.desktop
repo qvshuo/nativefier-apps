@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=ONLYOFFICE Document Editors
+Exec=/opt/ONLYOFFICE-linux-x64/ONLYOFFICE
+Icon=/opt/ONLYOFFICE-linux-x64/ONLYOFFICE.png
+StartupWMClass=onlyoffice-nativefier-e161bd
